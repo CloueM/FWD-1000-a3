@@ -1,0 +1,186 @@
+:root{
+    /* Text colors */
+    --primary-text-color: #282828;
+    --secondary-text-color: white;
+
+    /* Accent Text color */
+    --accent-text-color: darkgreen;
+
+    /* Container Background colors */
+    --primary-bg-color: #eeeeee;
+    --secondary-bg-color: #caffca;
+    --accent-bg-color: #347034;
+
+    /* Fonts */
+    --primary-font: times new roman, serif;
+    --secondary-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0rem auto;
+    max-width: 31.25rem;
+    font-family: var(--secondary-font);
+    color:var(--primary-text-color);
+    line-height: 1.4;
+}
+
+h1,h2,h3{
+    font-family: var(--primary-font);
+}
+
+h1{
+    font-size: 2rem;
+}
+h2, h3{
+    font-size: 1.5rem;
+}
+/* Styles for Header */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary-bg-color);
+}
+
+header p{
+    text-align: center;
+}
+
+/*------------------------------------------*/
+/* Navigation bar style Start*/
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem 0rem; /* gap between the buttons: top/bot=1rem sides=0rem */
+    padding: 0;
+}
+
+.nav-list button {
+    text-decoration: none;
+    background: none;
+    color: var(--accent-text-color);
+    border: none;
+    padding:0.5rem 2rem;
+    transition: all 0.5s ease-in-out;
+    border-radius: .5rem;
+}
+
+.nav-list li button:hover {
+    background-color: var(--accent-bg-color);
+    color:var(--secondary-text-color);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 1rem;
+}
+
+
+.nav-list li button:focus {
+    outline: 2px solid var(--accent-text-color);
+    outline-offset: 2px;
+}
+
+/*------------------------------------------*/
+/* email us button start */
+.email-us-btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.email-us-btn{
+    padding:1rem 4rem;
+    background-color:var(--accent-bg-color);
+    color: var(--secondary-text-color);
+    border-style: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.email-us-btn:hover{
+    background-color: var(--primary-bg-color);
+    color: var(--accent-text-color);
+    border: 1px solid var(--accent-bg-color);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.email-us-btn:active{
+    border-radius: 2rem;
+}
+
+/*------------------------------------------*/
+/* service type styles Start */
+.services-article-container{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding:0rem;
+}
+
+.services-article-container article{
+    background-color: var(--secondary-bg-color);
+    border: 1px solid transparent;
+    padding: 1.5rem;
+    margin: 1rem 0rem;
+}
+
+.services-article-container article h3{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.services-article-container article hr{
+    border: 1px solid black;
+}
+
+/*------------------------------------------*/
+/* Happy Customers Section styles */
+.happy-customers-section{
+    padding-top: 2rem;
+}
+.happy-customers-section p a{
+    color:var(--accent-text-color);
+}
+
+.happy-customers-section p a:visited{
+    color:var(--primary-text-color);
+}
+
+.customer-articles-container{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    padding:0;
+    margin: 0;
+}
+
+.customer-articles-container article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+}
+
+.customer-articles-container article blockquote{
+    display: flex;
+    align-items: center;
+    gap:0rem .5rem;
+}
+
+.customer-articles-container article blockquote cite{
+    font-weight: 700;
+}
+
+.customer-articles-container article img{
+    border-radius: 100%;
+}
+/*------------------------------------------*/
+/* Footer Styles  */
+footer{
+    text-align: center;
+    background-color: var(--primary-bg-color);
+    padding: .5rem;
+}
